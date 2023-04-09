@@ -1,0 +1,54 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Prajna",
+	"patterns": [
+		{
+			"include": "#strings"
+		},
+		{
+			"include": "#numbers"
+		},
+		{
+			"match": "\\b(func|struct|implement|template)\\s+(\\w+)\\b",
+			"captures": {
+				"2": {
+					"name": "keyword.other.unit.prajna"
+				},
+				"0": {
+					"name": "entity.name.function.prajna"
+				}
+			}
+		},
+		{
+				"match": "\\b(\\d+)",
+				"name": "constant.numeric.prajna"
+		},
+		{
+			"include": "#keywords"
+		},
+		{
+			"match": "=|\\+|-|\\*|/|%|\\&|\\||\\!|\\^",
+			"name": "keyword.operator.prajna"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [{
+				"name": "keyword.control.prajna",
+				"match": "\\b(module|struct|implement|interface|template|var|use|as|if|while|for|in|to|continue|break|return)\\b"
+			}]
+		},
+		"strings": {
+			"name": "string.quoted.double.prajna",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.prajna",
+					"match": "\\\\."
+				}
+			]
+		}
+	},
+	"scopeName": "source.prajna"
+}

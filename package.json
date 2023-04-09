@@ -1,0 +1,25 @@
+{
+  "name": "vscode-prajna-tools",
+  "displayName": "Prajna",
+  "description": "Prajna Programming Language Tools",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.77.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "prajna",
+      "aliases": ["Prajna", "prajna"],
+      "extensions": [".prajna"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "prajna",
+      "scopeName": "source.prajna",
+      "path": "./syntaxes/prajna.tmLanguage.json"
+    }]
+  }
+}
