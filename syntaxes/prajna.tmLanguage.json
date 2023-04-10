@@ -35,7 +35,7 @@
 		"keywords": {
 			"patterns": [{
 				"name": "keyword.control.prajna",
-				"match": "\\b(module|struct|implement|interface|template|var|use|as|if|while|for|in|to|continue|break|return)\\b"
+				"match": "\\b(module|struct|implement|interface|template|var|use|as|if|else|while|for|in|to|continue|break|return)\\b"
 			}]
 		},
 		"strings": {
