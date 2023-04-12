@@ -27,6 +27,15 @@
 			"include": "#keywords"
 		},
 		{
+			"begin": "\\/\\/",
+			"end": "\n",
+			"name": "comment.line.double-slash.prajna"
+		},
+		{
+			"match": "\\/\\*[^*]*\\*+([^/*][^*]*\\*+)*\\/",
+			"name": "comment.block.prajna"
+		},
+		{
 			"match": "=|\\+|-|\\*|/|%|\\&|\\||\\!|\\^",
 			"name": "keyword.operator.prajna"
 		}
